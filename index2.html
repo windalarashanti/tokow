@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebsiteQiu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="menuKiri">
+            <ul>
+                <li><a href="#">Tentang kami</a></li>
+                <li><a href="#">Mitra Kami</a></li>
+                <li><a href="#">Mulai Berjualan</a></li>
+                <li><a href="#">Promo</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+            </div>
+            <div class="judulKanan">
+                <h1 class="judul"> TOKO BATIK</h1>
+            </div>
+        </div>
+        <div class="hero"></div>
+        <div class="content ">
+            <div class="main">
+            <h2>Produk Terbaru</h2>
+
+            <section class="product" data-kategori="Atasan Wanita">
+                <a href="produk1.html"><img src="produk1.jpg" alt="Produk 1"></a>
+                <h3>Atasan Wanita </h3>
+                <p>S-M-L-XL</p>
+                <p class="price">Harga : Rp.75.000</p>
+
+                <button class="tombol-beli" onclick="tampilkanDetailProduk('Atasan Wanita','75.000','Kainnya halus dan motifnya bagus banget','produk1.jpg')">Detail Produk</button>
+
+                <button class="tombol-keranjang" onclick="tambahkanProdukKeKeranjang('Atasan Wanita 1',75000)">Tambahkan ke Keranjang</button><br/>
+            </section>
+
+            <section class="product" data-kategori="Atasan Wanita">
+                <a href="produk2.html"><img src="produk2.jpg" alt="Produk 2" sizes=></a>
+                <h3> Atasan Wanita </h3>
+                <p>S-M-L-XL</p>
+                <p class="price">Harga : Rp.70.000</p>
+
+                <button class="tombol-beli" onclick="tampilkanDetailProduk('Atasan Wanita','70.000','Kainnya adem, tebal dan cocok untuk dipakai ke kantor','produk2.jpg')">Detail Produk</button>
+
+                <button class="tombol-keranjang" onclick="tambahkanProdukKeKeranjang('Atasan Wanita 2 ',70000)">Tambahkan Ke Keranjang</button><br/>
+            </section>
+
+            <section class="product" data-kategori="Atasan Wanita ">
+                <a href="produk3.html"><img src="produk3.jpg" alt="Produk 3"></a>
+                <h3> Atasan Wanita </h3>
+                <p>S-M-L-XL</p>
+                <p class="price">Harga : Rp.65.000</p>
+
+                <button class="tombol-beli" onclick="tampilkanDetailProduk('Atasan Wanita','65.000','Detail Lengkap tentang Produk Baju Batik Atasan Wanita ','produk3.jpeg')">Detail Produk</button>
+
+                <button class="tombol-keranjang" onclick="tambahkanProdukKeKeranjang('Atasan Wanita 3',65000)">Tambahkan Ke Keranjang</button><br/>
+            </section>
+
+            <section class="product" data-kategori="Baju Batik Couple">
+                <a href="produk4.html"><img src="produk4.jpg" alt="Produk 4"></a>
+                <h3>Baju Batik Couple</h3>
+                <p>S-M-L-XL</p>
+                <p class="price">Harga : Rp.250.000</p>
+
+                <button class="tombol-beli" onclick="tampilkanDetailProduk('Baju Batik Couple ','250.000','Detail Lengkap tentang Produk Baju Batik Couple','produk4.jpg')">Detail Produk</button>
+
+                <button class="tombol-keranjang" onclick="tambahkanProdukKeKeranjang('Baju Batik Couple 1',250000)">Tambahkan Ke Keranjang</button><br/>
+            </section>
+
+            <section class="product" data-kategori="Baju Batik Couple">
+                <a href="produk5.html"><img src="produk5.jpg" alt="Produk 5"></a>
+                <h3> Baju Batik Couple </h3>
+                <p>S-M-L-XL</p>
+                <p class="price">Harga : Rp.230.000</p>
+
+                <button class="tombol-beli" onclick="tampilkanDetailProduk('Baju Batik Couple','230.000','Detail Lengkap tentang Produk Baju Batik Couple','produk5.jpg')">Detail Produk</button>
+
+                <button class="tombol-keranjang" onclick="tambahkanProdukKeKeranjang('Baju Batik Couple 2',230000)">Tambahkan Ke Keranjang</button><br/>
+            </section>
+
+            <section class="product" data-kategori="Baju Batik Couple">
+                <a href="produk6.html"><img src="produk8.jpg" alt="Produk 6"></a>
+                <h3>Baju Batik Couple </h3>
+                <p>M-L-XL</p>
+                <p class="price">Harga : Rp.240.000</p>
+
+                <button class="tombol-beli" onclick="tampilkanDetailProduk('Baju Batik Couple','240.000','Detail Lengkap tentang Produk Baju Batik Couple','produk8.jpg')">Detail Produk</button>
+
+                <button class="tombol-keranjang" onclick="tambahkanProdukKeKeranjang('Baju Batik Couple 3',240000)">Tambahkan Ke Keranjang</button><br/>
+            </section>
+
+            <section class="product" data-kategori="Kemeja Batik">
+                <a href="produk7.html"><img src="produk6.jpg" alt="Produk 7"></a>
+                <h3>Kemeja Batik </h3>
+                <p>M-L-XL-XXL</p>
+                <p class="price">Harga : Rp.110.000</p>
+
+                <button class="tombol-beli" onclick="tampilkanDetailProduk('Kemeja pria','110.000','Detail Lengkap tentang Produk Kemeja pria','produk6.jpg')">Detail Produk</button>
+
+                <button class="tombol-keranjang" onclick="tambahkanProdukKeKeranjang('Kemeja pria 1 ',110000)">Tambahkan Ke Keranjang</button><br/>
+            </section>
+
+            <section class="product" data-kategori="Kemeja Batik">
+                <a href="produk8.html"><img src="produk7.jpg" alt="Produk 8"></a>
+                <h3>Kemeja Batik </h3>
+                <p>M-L-XL-XXL</p>
+                <p class="price">Harga : Rp.127.000</p>
+
+                <button class="tombol-beli" onclick="tampilkanDetailProduk('Kemeja pria','127.000','Detail Lengkap tentang Produk Kemeja pria','produk7.jpg')">Detail Produk</button>
+
+                <button class="tombol-keranjang" onclick="tambahkanProdukKeKeranjang('Kemeja pria 2 ',127000)">Tambahkan Ke Keranjang</button><br/>
+            </section>
+
+            <section class="product" data-kategori="Kemeja Batik ">
+                <a href="produk9.html"><img src="produk12.jpg" alt="Produk 9"></a>
+                <h3>Kemeja Batik  </h3>
+                <p>M-L-XL-XXL</p>
+                <p class="price">Harga : Rp.65.000</p>
+
+                <button class="tombol-beli" onclick="tampilkanDetailProduk('Kemeja Batik 3','65.000','Detail Lengkap tentang Produk Baju Hem Batik','produk9.jpg')">Detail Produk</button>
+
+                <button class="tombol-keranjang" onclick="tambahkanProdukKeKeranjang('Kemeja Batik 3',65000)">Tambahkan Ke Keranjang</button><br/>
+            </section>
+
+            <section class="product" data-kategori="Hem Batik">
+                <a href="produk10.html"><img src="produk9.jpg" alt="Produk 10"></a>
+                <h3> Hem Batik </h3>
+                <p>M-L-XL</p>
+                <p class="price">Harga : Rp.70.000</p>
+
+                <button class="tombol-beli" onclick="tampilkanDetailProduk(' Hem Batik','70.000','Detail Lengkap tentang Produk Baju Hem Batik','produk9.jpg')">Detail Produk</button>
+                
+                <button class="tombol-keranjang" onclick="tambahkanProdukKeKeranjang(' Hem Batik 1',70000)">Tambahkan Ke Keranjang</button><br/>
+            </section>
+
+            <section class="product" data-kategori="Hem Batik">
+                <a href="produk10.html"><img src="produk10.jpg" alt="Produk 10"></a>
+                <h3>Hem Batik </h3>
+                <p>M-L-XL</p>
+                <p class="price">Harga : Rp.75.000</p>
+
+                <button class="tombol-beli" onclick="tampilkanDetailProduk(' Hem Batik','75.000','Detail Lengkap tentang Produk Baju Hem Batik','produk10.jpg')">Detail Produk</button>
+                
+                <button class="tombol-keranjang" onclick="tambahkanProdukKeKeranjang(' Hem Batik 2 ',75000)">Tambahkan Ke Keranjang</button><br/>
+            </section>
+
+            <section class="product" data-kategori="Hem Batik">
+                <a href="produk10.html"><img src="produk11.jpg" alt="Produk 10"></a>
+                <h3>Hem Batik </h3>
+                <p>M-L-XL</p>
+                <p class="price">Harga : Rp.80.000</p>
+
+                <button class="tombol-beli" onclick="tampilkanDetailProduk(' Hem Batik','80.000','Detail Lengkap tentang Produk Baju Hem Batik','produk11.jpg')">Detail Produk</button>
+                
+                <button class="tombol-keranjang" onclick="tambahkanProdukKeKeranjang('Hem Batik 3',80000)">Tambahkan Ke Keranjang</button><br/>
+            </section>
+
+
+
+
+            <!-- Tambahkan lebih banyak produk di sini -->
+
+
+            </div>
+            <div class="sidebar">
+                <h3>Kategori</h3>
+
+                 <!-- Kategori Produk -->
+                
+                 <div class="kategori-pilihan">
+                    <input type="text" id="cariBarang" placeholder="Cari Barang...." onkeyup="cariBarang('')">
+                    <button onclick="filterKategori('all')">Semua</button><br/> 
+                    <button onclick="filterKategori('Kemeja Batik')">Kemeja Batik</button><br/>
+                    <button onclick="filterKategori('Hem Batik')">Hem Batik</button><br/>
+                    <button onclick="filterKategori('Baju Batik Couple')">Baju Batik Couple</button><br/>
+                    <button onclick="filterKategori('Atasan Wanita')"> Atasan Wanita</button>
+                </div>
+            </div>
+       
+            <br/><br/>
+            <!-- Keranjang Belanja-->
+            <div class="keranjang">
+                <h3>Keranjang Belanja</h3>
+                <ul id="daftar-keranjang">
+                    <!--Daftar produk yang ditambahkan ke keranjang akan ditampilkan disini-->
+                </ul>
+                <p>Total Belanja: <span id="total-belanja">Rp.0</span></p>
+            
+                <button id="checkout" onclick="checkout()">Checkout</a></button>
+            </div>
+        </div>
+        <div class="footer">
+            <p class="copyright">Copyright 2023. Toko Batik</p>
+        </div>
+    </div>   
+
+<!--Detail Produk (popup)-->
+
+<script>
+
+function tampilkanDetailProduk (namaProduk, hargaProduk, detailProduk, gambarProduk) {
+    //Buat Elemen notifikasi/popup
+    const popup = document.createElement('div');
+    popup.className = 'popup';
+    popup.innerHTML = `
+    <div class="popup-content">
+            <span class="popup-close" onclick="tutupPopup()">&times;</span>
+            <img src="${gambarProduk}" alt="${namaProduk}"></img>
+            <h2>${namaProduk}</h2>
+            <p class="price">Harga : ${hargaProduk}</p>
+            <p>${detailProduk}</p>
+            <button class="tombol-beli">Beli Sekarang</button>
+        </div>
+    `;
+
+    //Tambahkan notifikasi/popup ke body
+    document.body.appendChild(popup);
+}
+
+function tutupPopup() {
+    const popup = document.querySelector('.popup');
+    if (popup) {
+        document.body.removeChild(popup);
+    }
+}
+
+<!--Kategori Produk-->
+
+function filterKategori (kategori) {
+    const produk = document.querySelectorAll('.product');
+    for (const produkItem of produk) {
+        const kategoriProduk = produkItem.getAttribute('data-kategori');
+
+        if (kategori == 'all' || kategori === kategoriProduk) {
+            produkItem.style.display = 'block';
+        } else {
+            produkItem.style.display = 'none';
+        }
+    }
+}
+</script>
+
+<!--Cari Barang-->
+<script>
+function cariBarang() {
+    const inputPencarian = document.getElementById('cariBarang');
+    const kataKunci = inputPencarian.value.toLowerCase();
+    const produk = document.querySelectorAll('.product');
+
+    for (const produkItem of produk) {
+        const namaProduk = produkItem.querySelector('h3').textContent.toLowerCase();
+        const deskripsiProduk = produkItem.querySelector('p').textContent.toLowerCase();
+
+        if (namaProduk.includes(kataKunci) || deskripsiProduk.includes (kataKunci)) {
+            produkItem.style.display = 'block';
+        } else {
+            produkItem.style.display = 'none';
+        }
+    }
+}
+</script>
+
+<!--Keranjang Belanja-->
+
+<script>
+const keranjang=[];
+    const totalBelanja = 0;
+
+    function tambahkanProdukKeKeranjang (namaProduk, harga){
+        let produkDitemukan = false;
+        
+        for (let i=0; i<keranjang.length; i++){
+            if(keranjang[i].nama === namaProduk){
+
+                keranjang[i].jumlah++;
+                produkDitemukan = true;
+                break;
+            }
+        }
+        
+        if(!produkDitemukan){
+            keranjang.push({nama: namaProduk, harga: harga, jumlah: 1})
+        }
+        updateKeranjang()
+    }
+
+function updateKeranjang() {
+    const daftarKeranjang = document.getElementById('daftar-keranjang');
+    const totalBelanjaElem = document.getElementById('total-belanja');
+    daftarKeranjang.innerHTML = "";
+    let total = 0;
+
+    keranjang.forEach((produk) => {
+        const item = document.createElement('li');
+        const jum = produk.jumlah * produk.harga;
+        item.innerHTML = `<p class="namaP">${produk.nama}</p>
+                 <p class="jumlahP">${produk.jumlah}</p>
+                 <p class="hargaP">Rp ${produk.harga.toLocaleString(
+                   "id-ID"
+                 )}</p>
+                 <p class="jumlahHargaP">Rp ${jum.toLocaleString("id-ID")}</p>`;
+
+        daftarKeranjang.appendChild(item);
+        total += (produk.jumlah * produk.harga);
+    });
+    totalBelanjaElem.textContent = `Rp. ${total.toLocaleString("id-ID")}`;
+
+    sessionStorage.setItem('keranjangBelanja', JSON.stringify(keranjang));
+    
+}
+function checkout() {
+        // Implementasi proses checkout (misalnya, pembayaran dan pengiriman.)
+        // Anda dapat menambahkan kode sesuai dengan kebutuhan.  
+        window.location.href = "checkout.html";
+    }
+
+</script>
+
+</body>
+</html>
